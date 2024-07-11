@@ -1,0 +1,72 @@
+*{ margin: 0;padding: 0; list-style:none; text-decoration: none;}
+@keyframes banner{
+	0%{top:50px;}
+50%{top:100px;}
+100%{top:90px;}
+}
+@keyframes about{
+	0%{background-position:0 410px ;}
+	100%{background-position: 282px 410px;}
+}
+.header{width: 1160px; height: 80px; margin: 0 auto;}
+.logo{float:left;margin-top: 10px;}
+.nav{float: left; margin-left: 80px;}
+.nav li{float: left; position:relative;}
+.nav li a{display: block;line-height: 80px;padding: 0px 25px;font-size: 16px;color: #333;}
+.nav li:hover a{color: #009ee6;}
+
+.down{width: 150px;backgroud:#333;border-top: 2px solid #009ee6;position: absolute; top:80px;left: 0;display:none;}
+.down .list{height:40px;line-height: 40px;}
+.list p{float: left;margin-left: 10px;color: #ccc;}
+.list .box{width:10px;height:10px;border-radius: 50%;border: 2px solid:#ccc;float:left;margin-top: 12px;margin-left:5px;}
+.list:hover{background: #666;}
+.list:hover p{color: #fff;}
+.list:hover .box{border-color:#009ee6;}
+.nav li:hover .down{display:block;}
+
+.tel{float: right;text-align: right;margin-top: 15px;}
+.tel p{font-size: 14px;color: #666;}
+.tel span{font-size: 22px;color: #333;}
+
+.banner{width: 100%;height:670px;background:url(../img/banner.jpg) no-repeat center;position: relative;}
+.banner img{width:600px;height:500px;position:absolute;right: 10%;top:50px; animation: banner 6s linear infinite;}
+
+.jieshao{width:1160px;height: 620px;margin: 0 auto; text-align: center;overflow: hideen;}
+/*标题*/
+.title h3{font-size: 30px; color: #333;font-weight: 100;}
+.title p{font-size:14px;color:#888;margin: 10px 0 25px;}
+
+.title b{display:block;width: 70px;height:2px;background: blue;margin: 0;auto;}
+.jieshao_con{width: 1160px;height: 350px; margin-top:40px ;}
+.jieshao_con li{width: 290px;height: 350px; position: relative;float: left;}
+.jieshao_con .black{width: 290px;height: 350px; background: ragba(0,0,0,0.5);position: absolute;left:0;top: 0;overflow:hidden;}
+.black img{margin-top:95px ;transition: 0.3s;}
+.black i{display: block;width: 20px;height: 2px;background: #fff;margin: 27px 0 auto 20px;}
+.black h4{font-size: 22px; color: #fff;font-size: font-weight:100;}
+.black p{padding: 0 10px;color: #fff;font-size: 14px;margin:38px 0 60px;opacity:0;transition: 0.3s;}
+.black a{display:block;width: 98px;height: 28px;color: #fff;font-size: 14px;border: 1px solid:#fff;margin: 0 auto; opacity: 0;transition: 0.3s;line-height: 28px;}
+
+.jieshao_con li:hover .black{background:rgba(0,42,199,0.5);}
+.jieshao_con li:hover .black img{margin-top:45px ;}
+.jieshao_con li:hover .black i{opacity:0;margin-top:0;}
+.jieshao_con li:hover .black p{opacity: 1;}
+.jieshao_con li:hover .black a{opacity: 1;}
+
+.btn{width: 72px;   height:30px; color: #009EE6; font-size: 12px; border: 2px solid #009EE6;display: block;text-align: center;margin:40px auto;line-height: 32px; }
+.btn:hover{background: #009EE6;color: #fff;}
+
+.about{width: 100%;height: 610px;background:#009EE6 url(../img/波浪.png) repeat-x 0 410px;animation:about 5s linear infinite;text-align: center;overflow:hidden;
+margin-top: 40px;}
+.ab_center{width: 1160px; margin: 0 auto;}
+.about .title{margin-top:50px;}
+.about .title h3{color: #fff;}
+.about .title p{color: #fff;}
+.about .title b{background: #fff;}
+.about p{color:#fff ;margin-top: 30px; line-height: 1.75em;}
+.ab_list{margin-top: 40px;margin-bottom: 60px;overflow: hidden;}
+.ab_list dl{width: 130px;height: 950px;float: left; margin-left:128px;}
+.ab_list dl dt{font-size:48px;color: #fff;}
+.ab_list dl dt span{font-size: 12px;}
+.ab_list dl dd{font-size: 14px; color: #fff;}
+.about .btn{color: #fff;border-color: #fff;}
+
